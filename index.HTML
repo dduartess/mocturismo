@@ -20,7 +20,7 @@
     <aside class="menu">
         <div class="menu-content">
             <div class="div-logo">
-                <img src="/assets/img/logo-menu.png" alt="logo" >
+                <img src="/assets/img/logo-menu.png" alt="logo">
                 <h1>Moc Turismo</h1>
             </div>
             <div class="espaco"></div>
@@ -36,30 +36,33 @@
     </aside>
 
     <section id="inicio" class="main-bg first-div">
-        <div class="center-content">
-            <div>
-                <div class="main-content">
-
-                    <h2 class="first-content">
-                        <br> <em class="cor-white">Moc Turismo!</em>
-                    </h2>
-                </div>
-            </div>
-
-            <div class="sec-content">
-                <p>
-                    Com uma experiência consolidada há mais de 5 anos no setor turístico de Montes Claros,
-                    a Moc Turismo é mais que uma agência de viagens.<br>
-                    Somos uma empresa apaixonada por proporcionar experiências únicas e inesquecíveis para cada
-                    viajante.<br>
-                    Nosso compromisso é transformar suas viagens em momentos especiais, seja nas praias,
-                    nos destinos culturais ou em aventuras ao ar livre.<br>
-                </p>
-            </div>
-
-            <div class="img-main">
+        <div class="flex-section-one">
+            <div class="center-content">
                 <div>
-                    <img src="/assets/img/capamain.png" alt="img1" class="img1">
+                    <div class="main-content">
+
+                        <h2 class="first-content">
+                            <br> <em class="cor-white">Moc Turismo!</em>
+                        </h2>
+                    </div>
+                </div>
+
+                <div class="sec-content">
+                    <p>
+                        Com uma experiência consolidada há mais de 5 anos no setor turístico de Montes Claros,
+                        a Moc Turismo é mais que uma agência de viagens.<br>
+                        Somos uma empresa apaixonada por proporcionar experiências únicas e inesquecíveis para cada
+                        viajante.<br>
+                        Nosso compromisso é transformar suas viagens em momentos especiais, seja nas praias,
+                        nos destinos culturais ou em aventuras ao ar livre.<br>
+                    </p>
+                </div>
+
+                <div class="img-main">
+                    <div>
+                        <img src="/assets/img/capamain.png" alt="img1" class="img1">
+                    </div>
+
                 </div>
 
             </div>
@@ -137,7 +140,7 @@
                 </a>
             </div>
 
-            <div>
+            <div class="conteiner-agenda">
                 <a href="/altas_temporadas.html">
                     <div class="card-agenda2">
                         <img src="/assets/img/agenda/porto_alta_temp.png" alt="porto_alta_temp">
@@ -192,6 +195,23 @@
             </div>
         </div>
     </footer>
+
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const menuItems = document.querySelectorAll('.menu-item'); // Seleciona todos os itens de menu
+            const closeMenuCheckbox = document.getElementById('close-menu'); // Seleciona o checkbox do menu
+        
+            menuItems.forEach(item => {
+                item.addEventListener('click', () => {
+                    // Desmarcar o checkbox para fechar o menu
+                    closeMenuCheckbox.checked = false;
+                });
+            });
+        });
+    </script>
+    
+
 
 </body>
 
