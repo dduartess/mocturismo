@@ -8,66 +8,87 @@
 a{
     text-decoration: none;
 }
+li {
+    list-style-type: none;
+}
 
 html{
     scroll-behavior: smooth;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
-
-
-/* MENU */
-
-.menu{
+/* ESPAÇO ENTRE OS LADOS DO MENU*/
+.espaco{ 
+    padding-left: 25rem;
+}
+.menu {
+    padding-left: 10rem;
     position: fixed;
-    display: flex;
-    background: #0097dc;
-    height: 100px;
+    top: 0;
+    left: 0;
     width: 100%;
+    background: #0097dc;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.4rem;
+    color: white;
     justify-content: center;
-    align-items: center;
+    z-index: 1000;
+}
+
+.menu nav ul li a{
+    display: block;
     color: white;
-    z-index: 1000000000;
+    position: relative;
 }
 
-.logo-menu{
-    display: flex;
-    margin-right: 10px;
+.menu nav ul li a::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0.1rem;
+    left: 50%;
+    width: 0%;
+    height: 0.15rem;
+    background: white;
+    transition: all 300ms ease-in-out;
 }
 
-.menu-content{
-    display: flex;
-    list-style-type: none;
-    padding-right: 200px;
-    font-size: 20px;
-    align-items: center;
-    text-shadow: 0 0 1rem #004aad;
+.menu nav ul li a:hover:after{
+    width: 50%;
+    left: 25%;
 }
 
-.lista-menu{
-    display: flex;
-    list-style-type: none;
-    padding-left: 100px;
-    padding-right: 100px;
-    text-shadow: 0 0 1rem #004aad;
-    
+.menu-content {
+    display: flex; /* Flexbox para alinhar os itens */
+    align-items: center; /* Para centralizar verticalmente os itens */
 }
 
-.menu-box ul li a{
+.menu-content ul {
+    display: flex; /* Faz com que a lista se comporte como um flex container */
+}
+
+
+.menu-content li a {
     color: white;
-
+    padding: 0.5rem 1rem; /* Espaçamento interno para links */
+    transition: background 0.3s; /* Adiciona uma transição suave para o hover */
 }
 
-.menu-box li{
-    padding-left: 20px;
-    padding-right: 20px;
-    font-size: 20px;
+.div-logo{
+    display: flex;
+    max-width: 25rem;
+    max-height: 3rem;
+    padding-right: 7rem;
 }
 
-
-.cor-white{
-    color: white;
-    text-shadow: 0 0 1rem #004aad;
+.div-logo h1{
+    align-self: center;
 }
+
+.div-logo img{
+    max-height:9rem;
+    align-self: center;
+}
+
 
 /* Primeira tela*/
 
@@ -129,10 +150,6 @@ html{
     padding-top: 1rem;
 }
 
-.img1 .img2 .img3{
-    max-width: 15rem;
-    max-height: 15rem;
-}
 
 /* segunda tela */
 
@@ -654,348 +671,5 @@ html{
 .contact a {
     text-decoration: none; /* Remove o sublinhado do link */
     color: inherit; /* Mantém a cor do texto padrão */
-}
-
-/* Media Query para max-width: 1024px */
-@media (max-width: 1024px) {
-    .menu-content {
-        padding-right: 100px;
-    }
-
-    .lista-menu {
-        padding-left: 50px;
-        padding-right: 50px;
-    }
-
-    .main-content {
-        padding-left: 50px;
-    }
-
-    .img1 {
-        left: 40rem;
-    }
-
-    .cards-container {
-        gap: 3rem;
-    }
-
-    .card, .card2, .card3 {
-        width: 20rem;
-    }
-
-    .grid-agenda {
-        gap: 3rem;
-    }
-
-    .card-agenda1 img, .card-agenda2 img {
-        width: 20rem;
-        height: 15rem;
-    }
-
-    .text-card-agenda {
-        width: 20rem;
-        height: 15rem;
-        bottom: 15.3rem;
-    }
-}
-
-/* Media Query para max-width: 630px */
-@media (max-width: 630px) {
-    .menu {
-        height: 80px;
-    }
-
-    .menu-content {
-        padding-right: 50px;
-        font-size: 18px;
-    }
-
-    .lista-menu {
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    .main-content {
-        padding-top: 150px;
-        padding-left: 20px;
-    }
-
-    .first-content {
-        font-size: 3rem;
-        width: 20rem;
-        line-height: 3rem;
-    }
-
-    .sec-content {
-        font-size: 1.2rem;
-        width: 30rem;
-    }
-
-    .img1 {
-        left: 20rem;
-        bottom: 20rem;
-    }
-
-    .cards-container {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .card, .card2, .card3 {
-        width: 18rem;
-    }
-
-    .grid-agenda {
-        flex-direction: column;
-        gap: 2rem;
-    }
-
-    .card-agenda1 img, .card-agenda2 img {
-        width: 18rem;
-        height: 13rem;
-    }
-
-    .text-card-agenda {
-        width: 18rem;
-        height: 13rem;
-        bottom: 13.3rem;
-    }
-
-    .container-caixas {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .caixa-de-informacoes {
-        width: 80%;
-    }
-}
-
-/* Media Query para max-width: 450px */
-@media (max-width: 450px) {
-    .menu {
-        height: 60px;
-    }
-
-    .menu-content {
-        padding-right: 20px;
-        font-size: 16px;
-    }
-
-    .lista-menu {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .main-content {
-        padding-top: 100px;
-        padding-left: 10px;
-    }
-
-    .first-content {
-        font-size: 2rem;
-        width: 15rem;
-        line-height: 2rem;
-    }
-
-    .sec-content {
-        font-size: 1rem;
-        width: 20rem;
-    }
-
-    .img1 {
-        left: 10rem;
-        bottom: 15rem;
-    }
-
-    .card, .card2, .card3 {
-        width: 15rem;
-    }
-
-    .card-agenda1 img, .card-agenda2 img {
-        width: 15rem;
-        height: 10rem;
-    }
-
-    .text-card-agenda {
-        width: 15rem;
-        height: 10rem;
-        bottom: 10.3rem;
-    }
-
-    .caixa-de-informacoes {
-        width: 90%;
-    }
-}
-
-/* Media Query para max-width: 410px */
-@media (max-width: 410px) {
-    .menu {
-        height: 50px;
-    }
-
-    .menu-content {
-        padding-right: 10px;
-        font-size: 14px;
-    }
-
-    .lista-menu {
-        padding-left: 5px;
-        padding-right: 5px;
-    }
-
-    .main-content {
-        padding-top: 80px;
-        padding-left: 5px;
-    }
-
-    .first-content {
-        font-size: 1.5rem;
-        width: 12rem;
-        line-height: 1.5rem;
-    }
-
-    .sec-content {
-        font-size: 0.9rem;
-        width: 15rem;
-    }
-
-    .img1 {
-        left: 8rem;
-        bottom: 12rem;
-    }
-
-    .card, .card2, .card3 {
-        width: 12rem;
-    }
-
-    .card-agenda1 img, .card-agenda2 img {
-        width: 12rem;
-        height: 8rem;
-    }
-
-    .text-card-agenda {
-        width: 12rem;
-        height: 8rem;
-        bottom: 8.3rem;
-    }
-
-    .caixa-de-informacoes {
-        width: 95%;
-    }
-}
-
-/* Media Query para max-width: 350px */
-@media (max-width: 350px) {
-    .menu {
-        height: 40px;
-    }
-
-    .menu-content {
-        padding-right: 5px;
-        font-size: 12px;
-    }
-
-    .lista-menu {
-        padding-left: 2px;
-        padding-right: 2px;
-    }
-
-    .main-content {
-        padding-top: 60px;
-        padding-left: 2px;
-    }
-
-    .first-content {
-        font-size: 1.2rem;
-        width: 10rem;
-        line-height: 1.2rem;
-    }
-
-    .sec-content {
-        font-size: 0.8rem;
-        width: 12rem;
-    }
-
-    .img1 {
-        left: 6rem;
-        bottom: 10rem;
-    }
-
-    .card, .card2, .card3 {
-        width: 10rem;
-    }
-
-    .card-agenda1 img, .card-agenda2 img {
-        width: 10rem;
-        height: 6rem;
-    }
-
-    .text-card-agenda {
-        width: 10rem;
-        height: 6rem;
-        bottom: 6.3rem;
-    }
-
-    .caixa-de-informacoes {
-        width: 100%;
-    }
-}
-
-/* Media Query para max-width: 300px */
-@media (max-width: 300px) {
-    .menu {
-        height: 30px;
-    }
-
-    .menu-content {
-        padding-right: 2px;
-        font-size: 10px;
-    }
-
-    .lista-menu {
-        padding-left: 1px;
-        padding-right: 1px;
-    }
-
-    .main-content {
-        padding-top: 40px;
-        padding-left: 1px;
-    }
-
-    .first-content {
-        font-size: 1rem;
-        width: 8rem;
-        line-height: 1rem;
-    }
-
-    .sec-content {
-        font-size: 0.7rem;
-        width: 10rem;
-    }
-
-    .img1 {
-        left: 4rem;
-        bottom: 8rem;
-    }
-
-    .card, .card2, .card3 {
-        width: 8rem;
-    }
-
-    .card-agenda1 img, .card-agenda2 img {
-        width: 8rem;
-        height: 5rem;
-    }
-
-    .text-card-agenda {
-        width: 8rem;
-        height: 5rem;
-        bottom: 5.3rem;
-    }
-
-    .caixa-de-informacoes {
-        width: 100%;
-    }
 }
 

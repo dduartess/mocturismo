@@ -9,29 +9,31 @@
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/js/scripts.js">
 
 </head>
 
 <body>
-    <aside>
-        <div class="menu">
-            <div class=" menu-content">
-                <img src="/assets/img/logo-menu.png" alt="logo-moc-turismo" class="logo-menu">
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button" aria-pressed="true">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+    <aside class="menu">
+        <div class="menu-content">
+            <div class="div-logo">
+                <img src="/assets/img/logo-menu.png" alt="logo" >
                 <h1>Moc Turismo</h1>
             </div>
-
-            <div class="menu-box">
-                <ul class="lista-menu">
-                    <li><a href="#inicio"> Início </a></li>
-                    <li><a href="#Nossos-Destinos"> Nossos Destinos</a></li>
-                    <li><a href="#agenda-2025"> Agenda 2025</a></li>
-                    <li><a href="#sobre-nos"> Contatos</a></li>
+            <div class="espaco"></div>
+            <nav>
+                <ul>
+                    <li class="menu-item"><a href="#inicio">Início</a></li>
+                    <li class="menu-item"><a href="#Nossos-Destinos">Destinos</a></li>
+                    <li class="menu-item"><a href="#agenda-2025">Agenda</a></li>
+                    <li class="menu-item"><a href="#sobre-nos">Contatos</a></li>
                 </ul>
-            </div>
+            </nav>
         </div>
     </aside>
-
-
 
     <section id="inicio" class="main-bg first-div">
         <div class="center-content">
@@ -155,7 +157,7 @@
         <div class="sobre-nos-contato">
             <h2>Contatos:</h2>
         </div>
-    
+
         <div class="container-icones">
             <!-- Coluna 1: WhatsApp -->
             <div class="coluna-icones">
@@ -172,7 +174,7 @@
                     </a>
                 </p>
             </div>
-    
+
             <!-- Coluna 2: Instagram e Facebook -->
             <div class="coluna-icones">
                 <p class="contact">
