@@ -1,0 +1,1001 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+/* MENU */
+
+.menu{
+    position: fixed;
+    display: flex;
+    background: #0097dc;
+    height: 100px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 1000000000;
+}
+
+.logo-menu{
+    display: flex;
+    margin-right: 10px;
+}
+
+.menu-content{
+    display: flex;
+    list-style-type: none;
+    padding-right: 200px;
+    font-size: 20px;
+    align-items: center;
+    text-shadow: 0 0 1rem #004aad;
+}
+
+.lista-menu{
+    display: flex;
+    list-style-type: none;
+    padding-left: 100px;
+    padding-right: 100px;
+    text-shadow: 0 0 1rem #004aad;
+    
+}
+
+.menu-box ul li a{
+    color: white;
+
+}
+
+.menu-box li{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+
+.cor-white{
+    color: white;
+    text-shadow: 0 0 1rem #004aad;
+}
+
+/* Primeira tela*/
+
+
+.main-bg{
+    background-color: #8fd8f8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%230097dc' fill-opacity='0.07' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+    max-height: 100vh;
+    max-width: 100%;
+    background-position: center;
+    background-size: 20vh;
+}
+
+.center-content{
+    justify-content: center;
+    padding-left: 10rem;
+}
+
+.first-content{ /*primeiro texto da div principal*/
+    font-size: 5rem;
+    color: white;
+    width: 32rem;
+    line-height: 5rem;
+    text-shadow: 0 0 0.1rem #0047AB;
+}
+
+.main-content{/*conteiner principal da primeira div*/
+    display: flex;
+    padding-top: 200px;
+    padding-left: 100px;
+    padding-bottom: 20px;
+
+}
+
+.sec-content{ /* usado para ajustar o segundo conteiner na primeira div*/
+    display: flex;
+    margin-top: 1rem;
+    margin-left: 6rem;
+    font-size: 1.4rem;
+    color: #0047AB;
+    width: 50rem;
+}
+
+.img1{ /*ajustes primeira imagem*/
+    position: relative;
+    height: 60%;
+    width: 40%;
+    padding-top: 0.5rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 2rem;
+    left: 55rem;
+    bottom: 27rem;
+    z-index: 50;
+    border-radius: 5%;
+}
+
+.img-main{
+    padding-top: 1rem;
+}
+
+.img1 .img2 .img3{
+    max-width: 15rem;
+    max-height: 15rem;
+}
+
+/* segunda tela */
+
+.sec-bg{ /*background da segunda sessão*/
+    width: 100%;
+    height: 100vh;
+    background: #004aad;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.header{ /* Cabeçalho da segunda sessão*/
+    margin-left: 5rem;
+    padding-top: 2rem;
+    color: white;
+}
+
+.header h2{ /* Fonte da segunda sessão*/
+    font-size: 3rem;
+}
+
+/* Contêiner dos cartões */
+.cards-container {
+    display: flex; /* Habilita o layout flexbox */
+    text-align: center center;
+    align-items: center center;
+    align-content: center center;
+    justify-content: center;
+    gap: 5rem; /* Espaço entre os cartões */
+    margin-top: 5rem; /* Margem superior */
+    cursor: default;
+
+}
+
+/* Cartão principal */
+.card {
+    width: 25rem;
+    border-radius: 0.5rem;
+    aspect-ratio: 1 / 0.7;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out; /* Animação de zoom */
+}
+
+/* Caixa da imagem */
+.card .image-box {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.4s ease-in-out; /* Para o efeito de hover na imagem */
+}
+
+/* Animação do contorno usando ::after */
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 0.2rem solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, inset 0.4s ease-in-out;
+}
+
+/* Efeito de filtro quando o cartão é hoverado */
+.card:hover .image-box {
+    filter: grayscale(1) brightness(0.4); /* Torna a imagem escura e preto e branco */
+}
+
+/* Efeito de borda (contorno branco) quando o mouse passa sobre o cartão */
+.card:hover::after {
+    opacity: 1;
+    inset: 0.625rem; /* Espessura da borda */
+}
+
+/* Contêiner de conteúdo (h2 e p) */
+.card .content {
+    position: absolute;
+    bottom: 1.25rem; /* Colocando o conteúdo mais para baixo */
+    left: 1.25rem;
+    right: 1.25rem;
+    z-index: 2; /* Garantir que o conteúdo fique acima da imagem */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento central do texto */
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(1.25rem); /* Inicialmente deslocado para baixo */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Animações suaves */
+    padding-bottom: 1rem;
+}
+
+/* Quando o mouse passar sobre o cartão, o conteúdo se tornará visível */
+.card:hover .content {
+    opacity: 1; /* Torna o conteúdo visível */
+    transform: translateY(0); /* Faz o conteúdo voltar à posição normal */
+}
+
+/* Ajustando a imagem do cartão */
+#image-placa-porto {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
+    object-fit: cover; /* A imagem vai cobrir o espaço, sem distorção */
+    border-radius: 3%; /* Bordas arredondadas */
+}
+
+/* Cartão aracaju */
+.card2 {
+    width: 25rem;
+    border-radius: 0.5rem;
+    aspect-ratio: 1 / 0.7;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out; /* Animação de zoom */
+}
+
+/* Caixa da imagem */
+.card2 .image-box2 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.4s ease-in-out; /* Para o efeito de hover na imagem */
+}
+
+/* Animação do contorno usando ::after */
+.card2::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 0.2rem solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, inset 0.4s ease-in-out;
+}
+
+/* Efeito de filtro quando o cartão é hoverado */
+.card2:hover .image-box2 {
+    filter: grayscale(1) brightness(0.4); /* Torna a imagem escura e preto e branco */
+}
+
+/* Efeito de borda (contorno branco) quando o mouse passa sobre o cartão */
+.card2:hover::after {
+    opacity: 1;
+    inset: 0.625rem; /* Espessura da borda */
+}
+
+/* Contêiner de conteúdo (h2 e p) */
+.card2 .content2 {
+    position: absolute;
+    bottom: 1.25rem; /* Colocando o conteúdo mais para baixo */
+    left: 1.25rem;
+    right: 1.25rem;
+    z-index: 2; /* Garantir que o conteúdo fique acima da imagem */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento central do texto */
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(1.25rem); /* Inicialmente deslocado para baixo */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Animações suaves */
+    padding-bottom: 1rem;
+}
+
+/* Quando o mouse passar sobre o cartão, o conteúdo se tornará visível */
+.card2:hover .content2 {
+    opacity: 1; /* Torna o conteúdo visível */
+    transform: translateY(0); /* Faz o conteúdo voltar à posição normal */
+}
+
+/* Ajustando a imagem do cartão */
+#image-placa-aracaju {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
+    object-fit: cover; /* A imagem vai cobrir o espaço, sem distorção */
+    border-radius: 3%; /* Bordas arredondadas */
+}
+
+/* Cartão itacare */
+
+.card3 {
+    width: 25rem;
+    border-radius: 0.5rem;
+    aspect-ratio: 1 / 0.7;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease-in-out; /* Animação de zoom */
+}
+
+/* Caixa da imagem */
+.card3 .image-box3 {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: filter 0.4s ease-in-out; /* Para o efeito de hover na imagem */
+}
+
+/* Animação do contorno usando ::after */
+.card3::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 0.2rem solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out, inset 0.4s ease-in-out;
+}
+
+/* Efeito de filtro quando o cartão é hoverado */
+.card3:hover .image-box3 {
+    filter: grayscale(1) brightness(0.4); /* Torna a imagem escura e preto e branco */
+}
+
+/* Efeito de borda (contorno branco) quando o mouse passa sobre o cartão */
+.card3:hover::after {
+    opacity: 1;
+    inset: 0.625rem; /* Espessura da borda */
+}
+
+/* Contêiner de conteúdo (h2 e p) */
+.card3 .content3 {
+    position: absolute;
+    bottom: 1.25rem; /* Colocando o conteúdo mais para baixo */
+    left: 1.25rem;
+    right: 1.25rem;
+    z-index: 2; /* Garantir que o conteúdo fique acima da imagem */
+    color: white; /* Cor do texto */
+    text-align: center; /* Alinhamento central do texto */
+    opacity: 0; /* Inicialmente invisível */
+    transform: translateY(1.25rem); /* Inicialmente deslocado para baixo */
+    transition: opacity 0.4s ease, transform 0.4s ease; /* Animações suaves */
+    padding-bottom: 1rem;
+}
+
+/* Quando o mouse passar sobre o cartão, o conteúdo se tornará visível */
+.card3:hover .content3 {
+    opacity: 1; /* Torna o conteúdo visível */
+    transform: translateY(0); /* Faz o conteúdo voltar à posição normal */
+}
+
+/* Ajustando a imagem do cartão */
+#image-placa-itacare {
+    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
+    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
+    object-fit: cover; /* A imagem vai cobrir o espaço, sem distorção */
+    border-radius: 3%; /* Bordas arredondadas */
+}
+
+.description-destinos{ /* descrição da segunda tela */
+    margin-top: 2rem; 
+    margin-left: 5rem;
+    max-width: 62rem; /*tamanho maximo vertical*/
+    color: white;
+    font-size:  1.4rem;
+    text-shadow: 0 0 0.1rem black;
+}
+
+.shadow-blue{
+    text-shadow: 0 0 0.4rem  #0047AB;
+}
+
+/* AGENDA 2025 */
+
+.header-agenda{ /* Cabeçalho da terceira sessão*/
+    margin-left: 5rem;
+    padding-top: 6rem;
+    color: white;
+}
+
+.header-agenda h2{ /* Fonte da terceira sessão*/
+    font-size: 3rem;
+}
+
+.agenda-bg{ /*background da agenda*/
+    background-color: #8fd8f8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%230097dc' fill-opacity='0.07' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+
+}
+
+.grid-agenda{ /* ajustes das box's das agendas*/
+    display: flex; /* Habilita o layout flexbox */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem; /* Espaço entre os cartões */
+    padding-top: 10rem;
+
+}
+
+.card-agenda1 img{ /* ajuste das imagens dentro das box's */
+    width: 25rem;
+    height: 20rem;
+    border-radius: 5%;
+    outline: 0.5rem ridge rgba(0, 74, 173, .3);
+    border-radius: 2rem;
+    aspect-ratio: 1 / 0.7;
+    transition: transform 0.4s ease-in-out; /* Animação de zoom */
+    
+}
+
+.card-agenda1:hover{
+    filter: grayscale(1) brightness(0.4); /* Torna a imagem escura e preto e branco */
+}
+
+.text-card-agenda{
+    text-align: center;
+    align-items: center;
+    align-content: center;
+    border: black solid 1px;
+    position: relative;
+    color: white;
+    width: 25rem;
+    height: 20rem;
+    border-radius: 2rem;
+    bottom: 20.3rem;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(1px); /* Aplica um desfoque no fundo */
+
+}
+
+.text-card-agenda:hover{
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(10px); /* Aplica um desfoque no fundo */
+}
+.text-card-agenda h3{
+    padding-bottom: 0.5rem;
+}
+
+.text-card-agenda p{
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.card-agenda2 img{ /* ajuste das imagens dentro das box's */
+    width: 25rem;
+    height: 20rem;
+    border-radius: 5%;
+    outline: 0.5rem ridge rgba(0, 74, 173, .3);
+    border-radius: 2rem;
+    aspect-ratio: 1 / 0.7;
+    transition: transform 0.4s ease-in-out; /* Animação de zoom */
+    
+}
+
+.header-baixas-temporadas{
+    text-align: center;
+}
+
+.header-baixas-temporadas img{
+    width: 50rem;
+}
+
+.cabecalho-agenda{
+    color: white;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.ul-datas{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    
+}
+
+.ul-datas h3{
+    padding-top: 2rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.ul-datas ul li{
+    text-align: center;
+    list-style-type: disc;
+    color: white;
+    list-style: inside;
+    font-size: 1.1rem;
+}
+
+.sec-bg2{ /*background da segunda sessão*/
+    background: #004aad;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+.sec-bg2 hr{
+    margin-top: 1rem;
+    border: 0;
+    height: 1px;
+    background-image: -webkit-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+    background-image:    -moz-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+    background-image:     -ms-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+    background-image:      -o-linear-gradient(left, rgba(0,0,0,0), rgba(0,0,0,0.15), rgba(0,0,0,0)); 
+    margin: 25px;
+}
+
+.bg4{
+    background-color: #8fd8f8;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 56 28' width='56' height='28'%3E%3Cpath fill='%230097dc' fill-opacity='0.07' d='M56 26v2h-7.75c2.3-1.27 4.94-2 7.75-2zm-26 2a2 2 0 1 0-4 0h-4.09A25.98 25.98 0 0 0 0 16v-2c.67 0 1.34.02 2 .07V14a2 2 0 0 0-2-2v-2a4 4 0 0 1 3.98 3.6 28.09 28.09 0 0 1 2.8-3.86A8 8 0 0 0 0 6V4a9.99 9.99 0 0 1 8.17 4.23c.94-.95 1.96-1.83 3.03-2.63A13.98 13.98 0 0 0 0 0h7.75c2 1.1 3.73 2.63 5.1 4.45 1.12-.72 2.3-1.37 3.53-1.93A20.1 20.1 0 0 0 14.28 0h2.7c.45.56.88 1.14 1.29 1.74 1.3-.48 2.63-.87 4-1.15-.11-.2-.23-.4-.36-.59H26v.07a28.4 28.4 0 0 1 4 0V0h4.09l-.37.59c1.38.28 2.72.67 4.01 1.15.4-.6.84-1.18 1.3-1.74h2.69a20.1 20.1 0 0 0-2.1 2.52c1.23.56 2.41 1.2 3.54 1.93A16.08 16.08 0 0 1 48.25 0H56c-4.58 0-8.65 2.2-11.2 5.6 1.07.8 2.09 1.68 3.03 2.63A9.99 9.99 0 0 1 56 4v2a8 8 0 0 0-6.77 3.74c1.03 1.2 1.97 2.5 2.79 3.86A4 4 0 0 1 56 10v2a2 2 0 0 0-2 2.07 28.4 28.4 0 0 1 2-.07v2c-9.2 0-17.3 4.78-21.91 12H30zM7.75 28H0v-2c2.81 0 5.46.73 7.75 2zM56 20v2c-5.6 0-10.65 2.3-14.28 6h-2.7c4.04-4.89 10.15-8 16.98-8zm-39.03 8h-2.69C10.65 24.3 5.6 22 0 22v-2c6.83 0 12.94 3.11 16.97 8zm15.01-.4a28.09 28.09 0 0 1 2.8-3.86 8 8 0 0 0-13.55 0c1.03 1.2 1.97 2.5 2.79 3.86a4 4 0 0 1 7.96 0zm14.29-11.86c1.3-.48 2.63-.87 4-1.15a25.99 25.99 0 0 0-44.55 0c1.38.28 2.72.67 4.01 1.15a21.98 21.98 0 0 1 36.54 0zm-5.43 2.71c1.13-.72 2.3-1.37 3.54-1.93a19.98 19.98 0 0 0-32.76 0c1.23.56 2.41 1.2 3.54 1.93a15.98 15.98 0 0 1 25.68 0zm-4.67 3.78c.94-.95 1.96-1.83 3.03-2.63a13.98 13.98 0 0 0-22.4 0c1.07.8 2.09 1.68 3.03 2.63a9.99 9.99 0 0 1 16.34 0z'%3E%3C/path%3E%3C/svg%3E");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: 20vh;
+}
+
+.container-caixas {
+    display: flex; /* Usando flexbox para alinhar as caixas lado a lado */
+    justify-content: center; /* Distribui o espaço entre as caixas */
+    gap: 1rem; /* Espaçamento entre as caixas */
+    flex-wrap: wrap; /* Permite que as caixas se movam para a linha seguinte em telas pequenas */
+    padding-top: 2.5rem;
+}
+
+.cabecalho-agenda2{
+    color: #004aad;
+    font-size: 2rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.titulo-informacoes{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    text-shadow: 0 0 0.3rem black;
+}
+
+.caixa-de-informacoes{
+    margin-left: 1rem;
+    width: 15rem;
+    height: 15rem;
+    background: rgba(255, 255, 255, 0.1); /* Fundo branco semi-transparente */
+    backdrop-filter: blur(10px); /* Aplica um desfoque no fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar efeito de profundidade */
+    color: white; /* Cor do texto */
+    justify-content: center;
+}
+
+.caixa-de-informacoes h3{
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #004aad;
+    font-size: 1.7rem;
+}
+
+.imagem-grid-informacoes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagem-grid-informacoes img{
+    width: 3.5rem;
+    padding-bottom: 1rem;
+    
+}
+
+.descricao-grid{
+    color: #004aad;
+    margin-left: 3rem;
+    font-size: 1.1rem;
+}
+
+.cabecalho-agenda2 h4{
+    width: 30rem;
+    background: rgba(255, 255, 255, 0.1); /* Fundo branco semi-transparente */
+    backdrop-filter: blur(10px); /* Aplica um desfoque no fundo */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave para dar efeito de profundidade */
+    color: white; /* Cor do texto */
+    justify-content: center;
+    font-size: 2.5rem;
+    text-shadow: 0 0 0.3rem black;
+}
+
+.box-valor{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.blue-bg{
+    background: #004aad;
+    height: 10rem;
+}
+
+.sobre-nos-contato {
+    color: white;
+    padding-left: 10rem;
+    padding-top: 2rem;
+}
+
+.container-icones {
+    display: flex; /* Coloca as colunas lado a lado */
+    padding-left: 30rem; /* Alinha com o título */
+}
+
+.coluna-icones {
+    display: flex;
+    flex-direction: column; /* Itens um em cima do outro */
+    margin-left: 10rem;
+}
+
+.contact {
+    font-size: 20px;
+    display: flex; /* Alinha ícone e texto horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    color: white;
+}
+
+.contact i {
+    margin-right: 10px; /* Espaço entre o ícone e o texto */
+}
+
+.contact a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: inherit; /* Mantém a cor do texto padrão */
+}
+
+/* Media Query para max-width: 1024px */
+@media (max-width: 1024px) {
+    .menu-content {
+        padding-right: 100px;
+    }
+
+    .lista-menu {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .main-content {
+        padding-left: 50px;
+    }
+
+    .img1 {
+        left: 40rem;
+    }
+
+    .cards-container {
+        gap: 3rem;
+    }
+
+    .card, .card2, .card3 {
+        width: 20rem;
+    }
+
+    .grid-agenda {
+        gap: 3rem;
+    }
+
+    .card-agenda1 img, .card-agenda2 img {
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .text-card-agenda {
+        width: 20rem;
+        height: 15rem;
+        bottom: 15.3rem;
+    }
+}
+
+/* Media Query para max-width: 630px */
+@media (max-width: 630px) {
+    .menu {
+        height: 80px;
+    }
+
+    .menu-content {
+        padding-right: 50px;
+        font-size: 18px;
+    }
+
+    .lista-menu {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .main-content {
+        padding-top: 150px;
+        padding-left: 20px;
+    }
+
+    .first-content {
+        font-size: 3rem;
+        width: 20rem;
+        line-height: 3rem;
+    }
+
+    .sec-content {
+        font-size: 1.2rem;
+        width: 30rem;
+    }
+
+    .img1 {
+        left: 20rem;
+        bottom: 20rem;
+    }
+
+    .cards-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card, .card2, .card3 {
+        width: 18rem;
+    }
+
+    .grid-agenda {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .card-agenda1 img, .card-agenda2 img {
+        width: 18rem;
+        height: 13rem;
+    }
+
+    .text-card-agenda {
+        width: 18rem;
+        height: 13rem;
+        bottom: 13.3rem;
+    }
+
+    .container-caixas {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .caixa-de-informacoes {
+        width: 80%;
+    }
+}
+
+/* Media Query para max-width: 450px */
+@media (max-width: 450px) {
+    .menu {
+        height: 60px;
+    }
+
+    .menu-content {
+        padding-right: 20px;
+        font-size: 16px;
+    }
+
+    .lista-menu {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main-content {
+        padding-top: 100px;
+        padding-left: 10px;
+    }
+
+    .first-content {
+        font-size: 2rem;
+        width: 15rem;
+        line-height: 2rem;
+    }
+
+    .sec-content {
+        font-size: 1rem;
+        width: 20rem;
+    }
+
+    .img1 {
+        left: 10rem;
+        bottom: 15rem;
+    }
+
+    .card, .card2, .card3 {
+        width: 15rem;
+    }
+
+    .card-agenda1 img, .card-agenda2 img {
+        width: 15rem;
+        height: 10rem;
+    }
+
+    .text-card-agenda {
+        width: 15rem;
+        height: 10rem;
+        bottom: 10.3rem;
+    }
+
+    .caixa-de-informacoes {
+        width: 90%;
+    }
+}
+
+/* Media Query para max-width: 410px */
+@media (max-width: 410px) {
+    .menu {
+        height: 50px;
+    }
+
+    .menu-content {
+        padding-right: 10px;
+        font-size: 14px;
+    }
+
+    .lista-menu {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .main-content {
+        padding-top: 80px;
+        padding-left: 5px;
+    }
+
+    .first-content {
+        font-size: 1.5rem;
+        width: 12rem;
+        line-height: 1.5rem;
+    }
+
+    .sec-content {
+        font-size: 0.9rem;
+        width: 15rem;
+    }
+
+    .img1 {
+        left: 8rem;
+        bottom: 12rem;
+    }
+
+    .card, .card2, .card3 {
+        width: 12rem;
+    }
+
+    .card-agenda1 img, .card-agenda2 img {
+        width: 12rem;
+        height: 8rem;
+    }
+
+    .text-card-agenda {
+        width: 12rem;
+        height: 8rem;
+        bottom: 8.3rem;
+    }
+
+    .caixa-de-informacoes {
+        width: 95%;
+    }
+}
+
+/* Media Query para max-width: 350px */
+@media (max-width: 350px) {
+    .menu {
+        height: 40px;
+    }
+
+    .menu-content {
+        padding-right: 5px;
+        font-size: 12px;
+    }
+
+    .lista-menu {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .main-content {
+        padding-top: 60px;
+        padding-left: 2px;
+    }
+
+    .first-content {
+        font-size: 1.2rem;
+        width: 10rem;
+        line-height: 1.2rem;
+    }
+
+    .sec-content {
+        font-size: 0.8rem;
+        width: 12rem;
+    }
+
+    .img1 {
+        left: 6rem;
+        bottom: 10rem;
+    }
+
+    .card, .card2, .card3 {
+        width: 10rem;
+    }
+
+    .card-agenda1 img, .card-agenda2 img {
+        width: 10rem;
+        height: 6rem;
+    }
+
+    .text-card-agenda {
+        width: 10rem;
+        height: 6rem;
+        bottom: 6.3rem;
+    }
+
+    .caixa-de-informacoes {
+        width: 100%;
+    }
+}
+
+/* Media Query para max-width: 300px */
+@media (max-width: 300px) {
+    .menu {
+        height: 30px;
+    }
+
+    .menu-content {
+        padding-right: 2px;
+        font-size: 10px;
+    }
+
+    .lista-menu {
+        padding-left: 1px;
+        padding-right: 1px;
+    }
+
+    .main-content {
+        padding-top: 40px;
+        padding-left: 1px;
+    }
+
+    .first-content {
+        font-size: 1rem;
+        width: 8rem;
+        line-height: 1rem;
+    }
+
+    .sec-content {
+        font-size: 0.7rem;
+        width: 10rem;
+    }
+
+    .img1 {
+        left: 4rem;
+        bottom: 8rem;
+    }
+
+    .card, .card2, .card3 {
+        width: 8rem;
+    }
+
+    .card-agenda1 img, .card-agenda2 img {
+        width: 8rem;
+        height: 5rem;
+    }
+
+    .text-card-agenda {
+        width: 8rem;
+        height: 5rem;
+        bottom: 5.3rem;
+    }
+
+    .caixa-de-informacoes {
+        width: 100%;
+    }
+}
+
